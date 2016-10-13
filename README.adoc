@@ -18,9 +18,13 @@ docker build -t gs-spring-boot-docker .
 docker run -p 8082:8082 -t gs-spring-boot-docker
 
 Step 3 - Create ECS Cluster
-Create ECS Optimised instance and in user data add the following
+
+Create ECS Optimised instance and 
+i)in user data add the following
 #!/bin/bash
 echo ECS_CLUSTER=your_cluster_name >> /etc/ecs/ecs.config
+ii) IAM Role
+Give access to ECS
 
 Step 4 - Create ECR
 
