@@ -21,6 +21,9 @@ Step 3 - Create ECS Cluster
 
 Create ECS Optimised instance and 
 i)in user data add the following
+http://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html
+
+
 #!/bin/bash
 echo ECS_CLUSTER=your_cluster_name >> /etc/ecs/ecs.config
 ii) IAM Role
